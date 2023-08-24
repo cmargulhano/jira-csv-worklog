@@ -1,0 +1,14 @@
+# - Formato do CSV:
+#   issue;time;comment
+
+PAPV-1600;30m;PAPV - Daily - Sprint 30
+ETPV-1458;1h;ETPV - Daily - Sprint 30
+PAPV-1602;30m;PAPV - BUG Produção App Saúde - Prescrições MEVO
+PAPV-1616;1h;PAPV - BUG Produção App Saúde - Minha Saúde - Prescrições do Especialistas
+PAPV-1602;1h;PAPV - Weekly de Arquitetura
+PAPV-1604;1h;PAPV - Refinamento técnico da Arquitetura Intencional
+ETPV-1453;30m;ETPV - Refinamento técnico da Arquitetura Intencional
+ETPV-1455;30m;ETPV - Apoio Técnico - Sprint 30
+PAPV-1602;1h;PAPV - Refactory App do Pronto Atentimento Por Vídeo
+PAPV-1602;30m;PAPV - Checkpoint com parceiro de telemedicina Docway
+ARQSA-11;1h;ARQSA - Chapter de Arquitetura [Extra] - Interagindo com o cofre de senhas
