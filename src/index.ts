@@ -2,12 +2,12 @@ import axios from 'axios';
 import { PathLike } from 'fs';
 import fs from 'fs/promises';
 import ms from 'ms';
+import { format } from 'date-fns'; 
 
 // Configurações
 const baseUrl = 'https://sulamerica.atlassian.net/rest/api/2';
-const username = '<EMAIL>';
-// Gerar token em https://id.atlassian.com/manage-profile/security/api-tokens
-const token = '<TOKEN>';
+const username = 'claudio.margulhano@sulamerica.com.br';
+const token = 'ATATT3xFfGF08PN7OE_u2au0jCPhNRAISDWnsvHewDbqZdogh6HL7n8cngFtPO6vWyqXbAgUJCl6-i94Ms3YbZOsXmXLAQVcxht7whIql48PGlMRljCBZkpxMUz2Gph-d235vJns7R5wEZQfv2HxxlI6gBxrCq4ILSbUfl4zy544eol03AYnq6A=CE673AF4';
 const credentials = `${username}:${token}`;
 const authToken = Buffer.from(credentials).toString('base64');
 
@@ -18,8 +18,7 @@ const config = {
   },
 };
 
-// Função para registrar trabalho
-const saveWorklog = async (issueKey: string, data: { comment: string; timeSpentSeconds: string; }) => {
+const saveWorklog = async (issueKey: string, data: { comment: string; timeSpentSeconds: string; started: string; }) => {
   try {
     const response = await axios.post(
       `${baseUrl}/issue/${issueKey}/worklog`,
@@ -32,9 +31,11 @@ const saveWorklog = async (issueKey: string, data: { comment: string; timeSpentS
   }
 };
 
-// Processamento do CSV
-const processCSV = async (filePath: PathLike | fs.FileHandle) => {
+const processCSV = async (filePath: PathLike | fs.FileHandle, date: string) => {
   try {
+    if (!date) {
+      date = format(new Date(), "yyyy-MM-dd");
+    }
     const csvData = await fs.readFile(filePath, 'utf-8');
     const lines = csvData.trim().split('\n');
 
@@ -48,8 +49,10 @@ const processCSV = async (filePath: PathLike | fs.FileHandle) => {
         const data = {
           comment,
           timeSpentSeconds,
+          started: `${date}T08:30:00.000+0000`,
         };
 
+        console.log(data);
         await saveWorklog(issueKey, data);
       }
     }
@@ -59,4 +62,6 @@ const processCSV = async (filePath: PathLike | fs.FileHandle) => {
 };
 
 const csvFilePath = 'worklog.csv';
-processCSV(csvFilePath);
+const date = process.argv[2];
+
+processCSV(csvFilePath, date);
