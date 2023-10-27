@@ -7,7 +7,7 @@ import { format } from 'date-fns';
 // Configurações
 const baseUrl = 'https://sulamerica.atlassian.net/rest/api/2';
 const username = 'claudio.margulhano@sulamerica.com.br';
-const token = 'ATATT3xFfGF08PN7OE_u2au0jCPhNRAISDWnsvHewDbqZdogh6HL7n8cngFtPO6vWyqXbAgUJCl6-i94Ms3YbZOsXmXLAQVcxht7whIql48PGlMRljCBZkpxMUz2Gph-d235vJns7R5wEZQfv2HxxlI6gBxrCq4ILSbUfl4zy544eol03AYnq6A=CE673AF4';
+const token = '<TOKEN>';
 const credentials = `${username}:${token}`;
 const authToken = Buffer.from(credentials).toString('base64');
 
