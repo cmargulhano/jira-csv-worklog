@@ -8,7 +8,7 @@
   },
   "keywords": [],
   "author": "Cláudião - cmargulhano@gmail.com",
-  "homepage": "https://github.com/cmargulhano/sas-worklog",
+  "homepage": "https://github.com/cmargulhano/jira-csv-worklog",
   "license": "ISC",
   "devDependencies": {
     "@types/ms": "^0.7.31",
