@@ -1,14 +1,136 @@
 # - Formato do CSV:
 #   issue;time;comment
 
-PAPV-1600;30m;PAPV - Daily - Sprint 30
-ETPV-1458;1h;ETPV - Daily - Sprint 30
-PAPV-1602;30m;PAPV - BUG Produção App Saúde - Prescrições MEVO
-PAPV-1616;1h;PAPV - BUG Produção App Saúde - Minha Saúde - Prescrições do Especialistas
-PAPV-1602;1h;PAPV - Weekly de Arquitetura
-PAPV-1604;1h;PAPV - Refinamento técnico da Arquitetura Intencional
-ETPV-1453;30m;ETPV - Refinamento técnico da Arquitetura Intencional
-ETPV-1455;30m;ETPV - Apoio Técnico - Sprint 30
-PAPV-1602;1h;PAPV - Refactory App do Pronto Atentimento Por Vídeo
-PAPV-1602;30m;PAPV - Checkpoint com parceiro de telemedicina Docway
-ARQSA-11;1h;ARQSA - Chapter de Arquitetura [Extra] - Interagindo com o cofre de senhas
+# - Formato do CSV:
+#   issue;time;comment
+
+#TCGTRH-174;1h;Portal RH - Análises em geral, testes do ambiente de homologação, testes do PortalRH V2 para resolução do BUG do cache
+#TCGTRH-175;2h;Portal RH - Debugging - BUG do cache, investigação do BUG: gestão do cache do PWA em ambos os Portais (React e Vue), configuração do ServiceWorker para PWA do PortalRH V2 (React.js) - Login
+#TCGTRH-176;1h;Portal RH - Resolução do problema do ambiente de homologação - BLOCK na depuração do problema devido a problema de INFRA
+#TCGTRH-181;1h;Reuniões, Apoio técnico e alinhamentos, Apoio em geral, apoio técnico Thomazella sobre cofre de senhas
+#TCGTRH-186;2h;Portal RH - Hotfix - Hotfix ambiente PRD - gerando hotfix e validando os cenários de cache
+#TCGTRH-196;30m;Portal RH -Análises problema do cache em PRD - PortalRH V2 (React.js) - Login
+#TCGTRH-293;4h;Portal RH -Problema do cache em PRD - Espaço Colaborador
+#TCGTRH-181;2h;Reuniões, Apoio técnico e alinhamentos - apoio Vinícius sobre issue de Segurança - https://sulamerica.atlassian.net/browse/SEG-37745
+#TCGTRH-181;1h;Reuniões, Apoio técnico e alinhamentos - apoio Talita Souza sobre compartilhamento do reconhecimento no LinkedIn no Espaço Colaborador
+#TCGTRH-181;1h;Preparação apresentação PWA
+#TCGTRH-181;30m;Apoio sobre o Login do Espaço do Colaborador
+#TCGTRH-180;30m;Daily
+#TCGTRH-343;1h;Portal RH - Estudo da Solução para questões de Segurança no PortalRH v1 e v2 - Usando API do Google diretamente no Vue
+#TCGTRH-515;2h;PortalRH v1 VueJs - Implementação do login social com Google
+#TCGTRH-516;1h;PortalRH v1 VueJs - Refatoração do código do Login - Merge back master
+#TCGTRH-357;2h;PortalRH v1 Vuejs - Implementação da solução usando Cookie
+#TCGTRH-358;3h;PortalRH v2 React - Implementação da solução usando Cookie
+#TCGTRH-490;1h;PortalRH - Testes da solução TCGTRH-515 - PortalRH v1 VueJs - Implementação do login social com Google - Suporte
+#TCGTRH-411;1h;PortalRH - Deploy HML e PRD - Deploy Produção
+#TCGTRH-629;30m;PortalRH - análises e refinamento técnico - Refinamento técnico e Estudo da solução
+#TCGTRH-689;2h;PortalRH - Hotfix - correção ao recarregar a rota - armazenando no localstorage
+#TCGTRH-690;2h;PortalRH - Após fechar o PortalRH se não logar, apagar a rota armazenada para evitar redirecionamento
+#TCGTRH-631;1h;PortalRH - Testes e correções no ambiente de homologação
+#TCGTRH-632;1h;PortalRH - Deploy PRD
+#EDS-316;1h;1:1 com Nilton Castro - Comunidade da Engenharia
+#EDS-316;1h;1:1 com Ricardo Brandão - Comunidade da Engenharia
+#EDS-316;1h;Reunião Engenharia Comunidade com Marcos Rocha
+#EDS-316;30m;Reunião Engenharia Comunidade com Marcos Rocha
+#TCGTRH-708;1h;Espaço do Colaborador - Problema do cache em PRD - investigação
+#TCGTRH-709;2h;Espaço do Colaborador - Problema do cache em PRD - Implementação da solução, abertura do chamado na INFRA para login na branch hotfix N-331492
+#TCGTRH-710;3h;Espaço do Colaborador - Problema do cache em PRD - Testes na branch hotfix
+#TCGTRH-711;1h;Espaço do Colaborador - Deploy hotfix para testes em ambiente apartado
+#EDS-316;45m;1:1 da Engenharia Cross com Laurence Stendard
+#EDS-316;1h;Reunião Engenharia Comunidade com Marcio França e Leonardo Fraga
+#EDS-316;30m;Apoio Marcos Rocha e Laurence Stendard sobre PortalRH
+#EDS-316;1h;Reunião - GRC em Foco - Eleições e Fake News 
+#EDS-316;1h;Reunião - [SulaProd Talk] Transformação Digital e Gestão de Produtos
+#EDS-316;1h;Apoio Nilton Castro sobre horas - Apoio James Prado para acionar Gabriel Valença sobre API de Clientes
+#Refinamento técnico
+#Reuniões Engenharia
+
+#TCGTRH-783;45m;Daily
+#TCGTRH-785;180m;RH - Reuniões, Apoio técnico e alinhamentos - Preparação e Techtalk sobre o Gitflow
+#TCGTRH-782;30m;Atividades gerais da área
+#EDS-316;1h;Reunião comunidade Engenharia SulaTech 2.0 com Márcio França
+#TCGTRH-800;1h;PortalRH - Melhoria - impedir qualquer ação do colaborador até que ele clique em "OK" atualização do PortalRH
+#TCGTRH-801;1h;PortalRH - Correção bug: Missing required parameter: client_id
+#TCGTRH-813;2h;PortalRH - Deploy HML e PRD
+#EDS-316;1h;Setup do novo Notebook
+#EDS-316;1h;Atividades relacionadas a Engenharia Cross - Programa Hunter - Entrevista candidato Renato H K da SYSMAP
+#TCGTRH-710;1h;Espaço do Colaborador - Problema do cache em PRD - Testes na branch hotfix
+#TCGTRH-709;1h;Espaço do Colaborador - Problema do cache em PRD - Implementação da solução, abertura do chamado na INFRA para login na branch hotfix N-331492
+
+#TCGTRH-785;1h;RH - Reuniões, Apoio técnico e alinhamentos - Sistemas RH
+#TCGTRH-785;30m;RH - Reuniões, Apoio técnico e alinhamentos - Apoio em geral / apoio Kayky no Catalogo de Contatos
+#RH-2699;1h;RH - Reuniões, Apoio técnico e alinhamentos - Apoio no Espaço do Colaborador para resolução do conflito de branch no Gitflow
+#TCGTRH-708;1h;Espaço do Colaborador - Problema do cache em PRD - investigação
+#TCGTRH-709;2h;Espaço do Colaborador - Problema do cache em PRD - Implementação da solução
+#TCGTRH-710;30,;Espaço do Colaborador - Problema do cache em PRD - Testes na branch homologação
+#TCGTRH-711;1h;Espaço do Colaborador - Deploy em homologação
+#TCGTRH-785;30m;RH - Reuniões, Apoio técnico e alinhamentos - alinhamentos em geral Thalita Lima
+#TCGTRH-783;45m;Daily
+#TCGTRH-30;1h;Refatoração Espaço do Colaborador - análises do problema
+#TCGTRH-148;1h;PortalRH - investigação do problemas em PRD
+#TCGTRH-918;1h;PortalRH - Ajuste do board do PortalRH no Dynatrace - SRE - análise dos problemas de Login
+#TCGTRH-801;2h;PortalRH - Correção bug: Missing required parameter: client_id
+#TCGTRH-813;1h;PortalRH - Deploy HML e PRD
+#EDS-316;180m;Atividades relacionadas a Engenharia Cross - Programa Hunter - Entrevista Samuel - NTT Data
+#EDS-316;90m;Atividades Engenharia Cross - Reunião AMA com Márcio França
+#EDS-316;1h;Atividades relacionadas a Comunidade de Engenharia - Reoganização das Comunidades de Engenharia com Márcio França
+#EDS-316;1h;[Sula Tech Talk] First Day, First Commit: Como ambientes efêmeros e CLIs aceleram o ciclo de vida Dev
+#EDS-316;1h;Atividades relacionadas a Comunidade de Engenharia - Apoio Tiago Boeing sobre API do RH - Catalogo de Contatos
+#TCGTRH-686;4h;Corrigir Vulnerabilidade - Vazamento de dados - análises do problema
+#EDS-316;3h;Atividades Engenharia Cross - Encontro VITEO com Leonardo Fraga
+#TCGTRH-785;45m;RH - Reuniões, Apoio técnico e alinhamentos - 1:1 Talita Souza sobre cofre de senhas REX
+#EDS-316;1h;API de RH - definição com Arquitetura e Engenharia Cross - Fernando Belém
+#EDS-316;90m;Atividades relacionadas a Engenharia Cross - Programa Hunter - Ariel Aleixo
+#TCGTRH-783;1h;Sistemas RH
+#EDS-316;1h;1:1 com Carlos Faria
+#EDS-316;1h;1:1 com Ricardo Brandão
+#TCGTRH-686;2h;RH - Espaço do Colaborador - Corrigir Vulnerabilidade - Vazamento de dados - Reunião com Tiago Boeing e Laurence Stendard sobre Gateway de Segurança
+#TCGTRH-686;1h;RH - Espaço do Colaborador - Corrigir Vulnerabilidade - Análises
+#TCGTRH-785;2h;RH - Reuniões, Apoio técnico e alinhamentos - alinhamentos em geral Thalita Lima, apoio Lucas Silva, apoio Vinícius
+#EDS-316;1h;Atividades relacionadas a Engenharia Cross
+#TCGTRH-782;1h;Preparação apresentação PWA
+#EDS-316;1h;Atividades relacionadas a Engenharia Cross - Entrevista com Carlos GFT
+#EDS-316;1h;Atividades Engenharia Cross - Reunião AMA com Márcio França
+#TCGTRH-785;30m;RH - Reuniões, Apoio técnico e alinhamentos - Apoio técnico Talita Souza
+
+
+#TCGTRH-783;45m;Daily
+#TCGTRH-785;1h;RH - Reuniões, Apoio técnico e alinhamentos
+#TCGTRH-785;45m;RH - Reunião sobre API de Catalogo
+#TCGTRH-785;1h;RH - Reuniões, Apoio técnico e alinhamentos - Kayky sobre Catalogo de Contatos
+#TCGTRH-785;1h;RH - Reuniões, Apoio técnico e alinhamentos - entrevista Entrevista - Luanne
+#EDS-316;45m;1:1 com Laurence Stendard
+#EDS-316;1h;Atividades Engenharia Cross - Comunidades - Reorganização
+#EDS-316;1h;Atividades Engenharia Cross - GRC em Foco - Inovação e Cyber risk
+#EDS-316;3h;Atividades Engenharia Cross - Reunião VP VITEC - Leonardo Fraga
+#TCGTRH-686;1h;RH - Espaço do Colaborador - Correção da Vulnerabilidade se Segurança - Sustentação
+#TCGTRH-973;1h;RH - Catalogo de Contatos - Deploy HML e PRD
+#TCGTRH-974;1h;RH - Catalogo de Contatos - Testes - configuração do Apigee
+#TCGTRH-1167;3h;RH - ms-catalogo-contatos-bff - Implementação da geração de token do Apigee para consumo no Espaço do Colaborador
+#TCGTRH-1030;3h;RH - Implementar consumo da API Catalogo de Contatos pela rota exposta pelo Apigee no Espaço do Colaborador
+#TCGTRH-1043;30m;RH - Catalogo de Contatos - Implementação do keycloack Catálogo de Contatos para proteger API /contacts
+#TCGTRH-1103;30m;RH - Catalogo de Contatos - Implementação ms-catalogo-contatos-bff - listar todos os colaboradores
+#TCGTRH-1104;1h;RH - Catalogo de Contatos - Implementação ms-catalogo-contatos-bff - listar todos os colaboradores - paginado
+#TCGTRH-1075;1h;RH - Implementação ms-catalogo-contatos-bff - obter colaborador por id e email
+#TCGTRH-1105;1h;RH - Implementação ms-catalogo-contatos-bff - organograma
+#TCGTRH-1106;1h;RH - Implementação ms-catalogo-contatos-bff - demitidos
+#TCGTRH-181;30m;Reuniões, Apoio técnico e alinhamentos - apoio Vinícius SICTI Backend
+#TCGTRH-1043;2h;RH - Espaço do Colaborador - Implementação do keycloack Catálogo de Contatos para proteger API /contacts
+#EDS-316;1h;Atividades relacionadas a Engenharia Cross - Entrevista com Luis - SYSMAP
+#EDS-316;3h;Atividades Engenharia Cross e Workshop Confluence
+#EDS-316;90m;Atividades relacionadas a Engenharia Cross - Programa Hunter - Entrevista - Alexandre Goiabeira
+#TCGTRH-785;90m;Entrevistas Guilherme Cardoso e Lucas Gabriel para vaga do RH
+#EDS-316;1h;Techtalk RPA
+#EDS-316;1h;Atividades Engenharia Cross
+#EDS-316;1h;Atividades Engenharia Cross - PDI dos Liderados
+#EDS-316;1h;Atividades Engenharia Cross - Reunião AMA com Marcio França
+#EDS-316;1h;Atividades Engenharia Cross - Checkpoint Linha d'água
+#EDS-316;1h;Atividades Engenharia Cross - Planilha Linha d'água
+#EDS-316;1h;Atividades Engenharia Cross - 1:1 Carlos Peçanha
+#EDS-316;1h;Atividades Engenharia Cross - 1:1 Caroline Correa
+#TCGTRH-785;1h;RH - Reuniões, Apoio técnico e alinhamentos - Reunião Maria Beatriz
+#TCGTRH-785;1h;RH - Reuniões, Apoio técnico e alinhamentos - Reunião Analytics e análise de bug
+#TCGTRH-30;4h;RH - Refatoração Espaço do Colaborador - documentação, prototipação e levantamento da Arquitetura intencional
+#TCGTRH-597;2h;RH - Vulnerabilidades do Espaço do Colaborador
+TCGTRH-785;1h;RH - Reuniões, Apoio técnico e alinhamentos - Refatoração Espaço do Colaborador
+#EDS-316;1h;Atividades Engenharia Cross - Reunião AMA com Márcio França

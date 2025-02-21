@@ -2,28 +2,31 @@ import axios from 'axios';
 import { PathLike } from 'fs';
 import fs from 'fs/promises';
 import ms from 'ms';
-import { format } from 'date-fns'; 
+import { format } from 'date-fns';
+import { config } from './config';
 
 // Configurações
-const baseUrl = 'https://sulamerica.atlassian.net/rest/api/2';
-const username = 'claudio.margulhano@sulamerica.com.br';
-const token = '<TOKEN>';
+const baseUrl = config.jiraBaseUrl;
+const username = config.jiraUsername;
+const token = config.jiraToken;
 const credentials = `${username}:${token}`;
 const authToken = Buffer.from(credentials).toString('base64');
 
-const config = {
-  headers: {
-    Authorization: `Basic ${authToken}`,
-    'Content-Type': 'application/json',
-  },
-};
 
-const saveWorklog = async (issueKey: string, data: { comment: string; timeSpentSeconds: string; started: string; }) => {
+const saveWorklog = async (
+  issueKey: string,
+  data: { comment: string; timeSpentSeconds: string; started: string }
+) => {
   try {
     const response = await axios.post(
       `${baseUrl}/issue/${issueKey}/worklog`,
       data,
-      config
+      {
+        headers: {
+          Authorization: `Basic ${authToken}`,
+          'Content-Type': 'application/json',
+        },
+      }
     );
     console.log('Horas registradas com sucesso:', response.data);
   } catch (error: any) {
@@ -34,7 +37,7 @@ const saveWorklog = async (issueKey: string, data: { comment: string; timeSpentS
 const processCSV = async (filePath: PathLike | fs.FileHandle, date: string) => {
   try {
     if (!date) {
-      date = format(new Date(), "yyyy-MM-dd");
+      date = format(new Date(), 'yyyy-MM-dd');
     }
     const csvData = await fs.readFile(filePath, 'utf-8');
     const lines = csvData.trim().split('\n');

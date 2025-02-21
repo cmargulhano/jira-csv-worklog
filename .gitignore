@@ -1,2 +1,4 @@
 /node_modules/
 /src/index.js
+/src/config.js
+.env
